@@ -13,9 +13,9 @@
           <div class="index-logo">
             <a>
               <img
-                src="img/barbershop-index/logo-index.png"
-                width="368"
-                height="204"
+                src="img/barbershop-index/logo-header.png"
+                width="111"
+                height="24"
                 alt="Логотип барбершопа «Бородинский»"
               />
             </a>
@@ -66,44 +66,78 @@
       </header>
     </section>
     <main class="shop-content">
-      <div class="manufacturer">
-        <form id="shop-manufacturer">
-          <h3>ПРОИЗВОДИТЕЛИ:</h3>
-          <input type="checkbox" name="BAXTER" id="shop-manufacturer1" />BAXTER
-          OF CALIFORNIA<br />
-          <input type="checkbox" name="MR NATTY" id="shop-manufacturer2" />MR
-          NATTY<br />
-          <input
-            type="checkbox"
-            name="SUAVECITO"
-            id="shop-manufacturer3"
-          />SUAVECITO<br />
-          <input
-            type="checkbox"
-            name="MALIN"
-            id="shop-manufacturer4"
-          />MALIN+GOETZ<br />
-          <input
-            type="checkbox"
-            name="MURRAY`S"
-            id="shop-manufacturer5"
-          />MURRAY`S<br />
-          <input
-            type="checkbox"
-            name="AMERICAN CREW"
-            id="shop-manufacturer6"
-          />AMERICAN CREW<br />
+      <section class="manufacturer">
+        <h3>ПРОИЗВОДИТЕЛИ:</h3>
+        <form action="htpp:" method="post" class="shop-manufacturer">
+          <p>
+            <input
+              type="checkbox"
+              name="BAXTER"
+              id="shop-manufacturer1"
+              checked
+            />
+            <label for="shop-manufacturer1">BAXTER OF CALIFORNIA</label>
+          </p>
+          <p>
+            <input type="checkbox" name="MR NATTY" id="shop-manufacturer2" />
+            <label for="shop-manufacturer2">MR NATTY</label>
+          </p>
+
+          <p>
+            <input
+              type="checkbox"
+              name="SUAVECITO"
+              id="shop-manufacturer3"
+              checked
+            />
+            <label for="shop-manufacturer3">SUAVECITO</label>
+          </p>
+
+          <p>
+            <input type="checkbox" name="MALIN" id="shop-manufacturer4" />
+            <label for="shop-manufacturer4">MALIN+GOETZ</label>
+          </p>
+
+          <p>
+            <input type="checkbox" name="MURRAY`S" id="shop-manufacturer5" />
+            <label for="shop-manufacturer5">MURRAY`S</label>
+          </p>
+
+          <p>
+            <input
+              type="checkbox"
+              name="AMERICAN CREW"
+              id="shop-manufacturer6"
+              checked
+            />
+            <label for="shop-manufacturer6">AMERICAN CREW</label>
+          </p>
         </form>
-      </div>
-      <div class="groupOfGoods">
-        <form id="shop-group-of-goods">
-          <h3>ГРУППЫ ТОВАРОВ:</h3>
-          <input type="radio" name="group" value="" />БРИТВЕННЫЕ
-          ПРИНАДЛЕЖНОСТИ<br />
-          <input type="radio" name="group" value="" />СРЕДСТВА ДЛЯ УХОДА<br />
-          <input type="radio" name="group" value="" />АКСЕССУАРЫ<br />
+      </section>
+      <section class="groupOfGoods">
+        <h3>ГРУППЫ ТОВАРОВ:</h3>
+        <form action="https://test.org" method="POST" id="shop-group-of-goods">
+          <p>
+            <input
+              type="radio"
+              name="group"
+              value=""
+              id="shaving-accessories"
+            />
+            <label for="shaving-accessories">БРИТВЕННЫЕ ПРИНАДЛЕЖНОСТИ</label>
+          </p>
+
+          <p>
+            <input type="radio" name="group" value="" id="face-care" checked />
+            <label for="face-care">СРЕДСТВА ДЛЯ УХОДА</label>
+          </p>
+
+          <p>
+            <input type="radio" name="group" value="" id="other-accessories" />
+            <label for="other-accessories">АКСЕССУАРЫ</label>
+          </p>
         </form>
-      </div>
+      </section>
       <section class="section-shop-galery">
         <h2>Товары</h2>
         <ul>
@@ -168,9 +202,9 @@
                         title="Гель для волос «SUAVECITO»"
                       />
                     </a>
-                    <a class="titel" href="#"
-                      ><p>Гель для волос «SUAVECITO»</p></a
-                    >
+                    <a class="titel" href="#">
+                      <p>Гель для волос «SUAVECITO»</p>
+                    </a>
                   </div>
                 </div>
                 <div class="item-price-and-btm">
@@ -192,9 +226,9 @@
                         title="Глина для укладки волос «AMERICAN CREW»"
                       />
                     </a>
-                    <a class="titel" href="#"
-                      ><p>Глина для укладки волос «AMERICAN CREW»</p></a
-                    >
+                    <a class="titel" href="#">
+                      <p>Глина для укладки волос «AMERICAN CREW»</p>
+                    </a>
                   </div>
                 </div>
                 <div class="item-price-and-btm">
@@ -216,9 +250,9 @@
                         title="Гель для волос «AMERICAN CREW»"
                       />
                     </a>
-                    <a class="titel" href="#"
-                      ><p>Гель для волос «AMERICAN CREW»</p></a
-                    >
+                    <a class="titel" href="#">
+                      <p>Гель для волос «AMERICAN CREW»</p>
+                    </a>
                   </div>
                 </div>
                 <div class="item-price-and-btm">
@@ -240,9 +274,9 @@
                         title="Набор для бритья «Baxter of California»"
                       />
                     </a>
-                    <a class="titel" href="#"
-                      ><p>Набор для бритья «Baxter of California»</p></a
-                    >
+                    <a class="titel" href="#">
+                      <p>Набор для бритья «Baxter of California»</p>
+                    </a>
                   </div>
                 </div>
                 <div class="item-price-and-btm">
@@ -293,5 +327,52 @@
         <a class="btn" href="https://yandex.ru">Яндекс</a>
       </div>
     </footer>
+    <section>
+      <h2>Личный кабинет</h2>
+      <p>Введите свой логин и пароль.</p>
+      <!--Здесь будет форма-->
+      <form action="https://test.org" method="post">
+        <p>
+          <label for="user-login">Логин</label>
+          <input
+            id="user-login"
+            type="email"
+            name="login"
+            placeholder="email@example.com"
+          />
+        </p>
+        <p>
+          <label for="user-password">Пароль</label>
+          <input
+            id="user-password"
+            type="password"
+            name="password"
+            placeholder="*******"
+          />
+        </p>
+        <p>
+          <input id="login-password-info" type="checkbox" name="remember" />
+          <label for="login-password-info">Запомните меня </label>
+          <a href="#"> Я забыл пароль</a>
+        </p>
+        <p>
+          <button type="submit">Войти</button>
+        </p>
+      </form>
+      <button type="button">Закрыть</button>
+    </section>
+    <section>
+      <h2>Как до нас добраться</h2>
+      <p>
+        <img
+          src="img/barbershop-index/map.png"
+          width="780"
+          height="560"
+          alt="офис компании по адресу
+       ул.итд и тп"
+        />
+      </p>
+      <button type="button">Закрыть</button>
+    </section>
   </body>
 </html>
