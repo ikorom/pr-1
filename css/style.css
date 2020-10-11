@@ -1,9 +1,20 @@
-.main-page{
-    font-size: 14px;
-    line-height: 24px;
-    font-family: "PT Sans Narrow", sans-serif;
+.main-page {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "PT Sans Narrow", sans-serif;
 
-    color: #fff;
+  color: #fff;
 
-    background: #111 url("../img/barbershop-index/background-index.jpg");
+  background: #111 url("../img/barbershop-index/background-index.jpg");
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
