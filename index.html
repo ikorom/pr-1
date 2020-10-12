@@ -3,6 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <title>Барбершоп «Бородинский»</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;
+    700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/normalize.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
@@ -21,7 +27,7 @@
             </a>
           </div>
 
-          <ul>
+          <ul class="site-navigation">
             <li>
               <a href="#">Информация</a>
             </li>
@@ -39,7 +45,7 @@
             </li>
           </ul>
 
-          <ul>
+          <ul class="user-navigation">
             <li>
               <div class="user-block">
                 <a class="login" href="#">Вход</a>
@@ -50,13 +56,13 @@
       </div>
     </header>
     <main class="container">
-      <h1 class="visually-hidden"> Барбершоп «Бородинский»</h1>
+      <h1 class="visually-hidden">Барбершоп «Бородинский»</h1>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
 
-        <ul>
-          <li>
-            <h3 class="advantages-name">Быстро</h3>
+        <ul class="feature-list">
+          <li class="feature-item">
+            <h3>Быстро</h3>
 
             <p>
               Мы делаем свою работу быстро! Два часа пролетят незаметно и вы -
@@ -64,16 +70,16 @@
             </p>
           </li>
 
-          <li>
-            <h3 class="advantages-name">Круто</h3>
+          <li class="feature-item">
+            <h3>Круто</h3>
             <p>
               Забудьте, как вы стриглись раньше. Мы сделаев из вас звезду
               футбола и кино! Во всяком случае внешне.
             </p>
           </li>
 
-          <li>
-            <h3 class="advantages-name">Дорого</h3>
+          <li class="feature-item">
+            <h3>Дорого</h3>
             <p>
               Наши мастера - профессионалы своего дела и не могут стоить дешево.
               К тому же, разве цена не дает определенный статус?
@@ -81,100 +87,110 @@
           </li>
         </ul>
       </section>
-      <section class="news">
-        <h2 class="index-content-title">Новости</h2>
-        <ul class="news-preview">
-          <li>
-            <p class="news-text">Новость 1</p>
-            <time class="news-date" datetime="2016-01-11">11 января</time>
-          </li>
-          <li>
-            <p class="news-text">Новость 2</p>
-            <time class="news-date" datetime="2016-01-18">18 января</time>
-          </li>
-        </ul>
-        <a class="btn" href="news.html">Все новости</a>
-      </section>
-      <section class="gallery">
-        <h2 class="index-content-title">Фотогалерея</h2>
-        <div class="gallery">
-          <figure class="gallery-slide">
-            <a href="#">
-              <img
-                src="img/barbershop-index/gallery.png"
-                width="286"
-                height="164"
-                alt="Интерьер"
+      <div class="index-columns">
+        <section class="news">
+          <h2>Новости</h2>
+          <ul class="news-list">
+            <li class="news-item">
+              <p>Новость 1</p>
+              <time class="news-date" datetime="2016-01-11">11 января</time>
+            </li>
+            <li class="news-item">
+              <p>Новость 2</p>
+              <time class="news-date" datetime="2016-01-18">18 января</time>
+            </li>
+          </ul>
+          <a class="btn" href="news.html">Все новости</a>
+        </section>
+        <section class="gallery">
+          <h2 class="index-content-title">Фотогалерея</h2>
+          <div class="gallery">
+            <figure class="gallery-slide">
+              <a href="#">
+                <img
+                  src="img/barbershop-index/gallery.png"
+                  width="286"
+                  height="164"
+                  alt="Интерьер"
+                />
+              </a>
+            </figure>
+            <div class="button">
+            <button class="btn gallery-prev">Назад</button>
+            <button class="btn gallery-next">Вперёд</button>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="index-columns">
+        <section class="contacts">
+          <h2>Контактная информация</h2>
+          <p class="contacts-info">
+            БАРБЕРШОП «БОРОДИНСКИЙ»<br />
+            АДРЕС:Г.САНКТ-ПЕТЕРБУРГ,Б.КОНЮШЕННАЯ,Д.19/8<br />
+            ТЕЛЕФОН:+7(495)666-02-66
+          </p>
+          <p>
+            ВРЕМЯ РАБОТЫ:<br />
+            ПН - ПТ:С 10:00 ДО 22:00<br />
+            СБ - ВС:С 10:00 ДО 19:00
+          </p>
+          <a class="btn" href="map.html">как проехать</a>
+          <a class="btn" href="contacts.html">обратная связь</a>
+        </section>
+        <section class="apppointment">
+          <h2>Записаться</h2>
+          <p class="appoinment-info">
+            Укажите желаемую дату и время и мы свяжемся с вами для подтверждения
+            брони
+          </p>
+          <form
+            class="apppointment-form"
+            action="https://test.org"
+            method="post"
+          >
+            <p class="appoinment-item">
+              <label for="apppointment-date">Дата</label>
+              <input
+                id="apppointment-date"
+                type="date"
+                name="date"
+                value="2020-10-09"
               />
-            </a>
-          </figure>
-          <button class="btn gallery-prev">Назад</button>
-          <button class="btn gallery-next">Вперёд</button>
-        </div>
-      </section>
-      <section class="contacts">
-        <h2 class="index-content-title">Контактная информация</h2>
-        <p>
-          БАРБЕРШОП «БОРОДИНСКИЙ»<br />
-          АДРЕС:Г.САНКТ-ПЕТЕРБУРГ,Б.КОНЮШЕННАЯ,Д.19/8<br />
-          ТЕЛЕФОН:+7(495)666-02-66
-        </p>
-        <p>
-          ВРЕМЯ РАБОТЫ:<br />
-          ПН - ПТ:С 10:00 ДО 22:00<br />
-          СБ - ВС:С 10:00 ДО 19:00
-        </p>
-        <a class="btn" href="map.html">как проехать</a>
-        <a class="btn" href="contacts.html">обратная связь</a>
-      </section>
-      <section class="apppointment-block">
-        <h2 class="index-content-title">Записаться</h2>
-        <p>
-          Укажите желаемую дату и время и мы свяжемся с вами для подтверждения
-          брони
-        </p>
-        <form class="apppointment-form" action="https://test.org" method="post">
-          <p>
-            <label for="apppointment-date">Дата</label>
-            <input
-              id="apppointment-date"
-              type="date"
-              name="date"
-              value="2020-10-09"
-            />
-          </p>
-          <p>
-            <label for="apppointment-time">Время</label>>
-            <input
-              id="apppointment-time"
-              type="time"
-              name="time"
-              value="10:00"
-            />
-          </p>
-          <p>
-            <label for="apppointment-name">Ваше имя</label>
-            <input
-              id="apppointment-name"
-              type="text"
-              name="name"
-              value=""
-              placeholder="Имя"
-            />
-          </p>
-          <p>
-            <label for="apppointment-phone">Телефон</label>
-            <input
-              id="apppointment-phone"
-              type="tel"
-              name="phone"
-              value=""
-              placeholder="Телефон"
-            />
-          </p>
-          <button class="btn" type="submit">Отправить</button>
-        </form>
-      </section>
+            </p>
+            <p class="appoinment-item">
+              <label for="apppointment-time">Время</label>>
+              <input
+                id="apppointment-time"
+                type="time"
+                name="time"
+                value="10:00"
+              />
+            </p>
+            <p class="appoinment-item">
+              <label for="apppointment-name">Ваше имя</label>
+              <input
+                id="apppointment-name"
+                type="text"
+                name="name"
+                value=""
+                placeholder="Имя"
+              />
+            </p>
+            <p class="appoinment-item">
+              <label for="apppointment-phone">Телефон</label>
+              <input
+                id="apppointment-phone"
+                type="tel"
+                name="phone"
+                value=""
+                placeholder="Телефон"
+              />
+            </p>
+            <button class="btn" type="submit">Отправить</button>
+          </form>
+        </section>
+      </div>
     </main>
     <footer class="footer">
       <div class="footer-contacts">
@@ -188,9 +204,9 @@
       <div class="footer-social">
         <p>Давайте дружить!</p>
         <ul>
-          <li><a class="social-btn social-btn-vk" href="#">Вконтакте</a></li>
-          <li><a class="social-btn social-btn-fb" href="#">Фейсбук</a></li>
-          <li><a class="social-btn social-btn-inst" href="#">Инстаграм</a></li>
+          <li><a class="social-btn" href="#">Вконтакте</a></li>
+          <li><a class="social-btn" href="#">Фейсбук</a></li>
+          <li><a class="social-btn" href="#">Инстаграм</a></li>
         </ul>
       </div>
       <div class="footer-copyright">
@@ -198,13 +214,13 @@
         <a class="btn" href="https://yandex.ru">Яндекс</a>
       </div>
     </footer>
-    <section>
+    <section class="modal modal-login">
       <h2>Личный кабинет</h2>
       <p>Введите свой логин и пароль.</p>
       <!--Здесь будет форма-->
-      <form action="https://test.org" method="post">
+      <form class="login-form" action="https://test.org" method="post">
         <p>
-          <label for="user-login">Логин</label>
+          <label class="visually-hidden" for="user-login">Логин</label>
           <input
             id="user-login"
             type="email"
@@ -213,7 +229,7 @@
           />
         </p>
         <p>
-          <label for="user-password">Пароль</label>
+          <label class="visually-hidden" for="user-password">Пароль</label>
           <input
             id="user-password"
             type="password"
@@ -223,16 +239,16 @@
         </p>
         <p>
           <input id="login-password-info" type="checkbox" name="remember" />
-          <label for="login-password-info">Запомните меня </label>
-          <a href="#"> Я забыл пароль</a>
+          <label class="login-checkbox" for="login-password-info">Запомните меня </label>
+           <a class="restore" href="#"> Я забыл пароль</a>
         </p>
         <p>
-          <button type="submit">Войти</button>
+          <button class="btn" type="submit">Войти</button>
         </p>
       </form>
       <button type="button">Закрыть</button>
     </section>
-    <section>
+    <section class="modal modal-map">
       <h2>Как до нас добраться</h2>
       <p>
         <img

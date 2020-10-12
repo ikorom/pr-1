@@ -9,7 +9,7 @@
     <header class="main-header">
       <div class="container">
         <nav class="main-navigation">
-          <div class="index-logo">
+          <div class="header-logo">
             <a>
               <img
                 src="img/barbershop-index/logo-header.png"
@@ -20,7 +20,7 @@
             </a>
           </div>
 
-          <ul>
+          <ul class="site-navigation">
             <li>
               <a href="#">Информация</a>
             </li>
@@ -38,7 +38,7 @@
             </li>
           </ul>
 
-          <ul>
+          <ul class="user-navigation">
             <li>
               <div class="user-block">
                 <a class="login" href="#">Вход</a>
@@ -180,9 +180,9 @@
       <div class="footer-social">
         <p>Давайте дружить!</p>
         <ul>
-          <li><a class="social-btn social-btn-vk" href="#">Вконтакте</a></li>
-          <li><a class="social-btn social-btn-fb" href="#">Фейсбук</a></li>
-          <li><a class="social-btn social-btn-inst" href="#">Инстаграм</a></li>
+          <li><a class="social-btn" href="#">Вконтакте</a></li>
+          <li><a class="social-btn" href="#">Фейсбук</a></li>
+          <li><a class="social-btn" href="#">Инстаграм</a></li>
         </ul>
       </div>
       <div class="footer-copyright">
@@ -190,13 +190,13 @@
         <a class="btn" href="https://yandex.ru">Яндекс</a>
       </div>
     </footer>
-    <section>
+    <section class="modal modal-login">
       <h2>Личный кабинет</h2>
       <p>Введите свой логин и пароль.</p>
       <!--Здесь будет форма-->
-      <form action="https://test.org" method="post">
+      <form class="login-form" action="https://test.org" method="post">
         <p>
-          <label for="user-login">Логин</label>
+          <label class="visually-hidden" for="user-login">Логин</label>
           <input
             id="user-login"
             type="email"
@@ -205,7 +205,7 @@
           />
         </p>
         <p>
-          <label for="user-password">Пароль</label>
+          <label class="visually-hidden" for="user-password">Пароль</label>
           <input
             id="user-password"
             type="password"
@@ -215,16 +215,18 @@
         </p>
         <p>
           <input id="login-password-info" type="checkbox" name="remember" />
-          <label for="login-password-info">Запомните меня </label>
-          <a href="#"> Я забыл пароль</a>
+          <label class="login-checkbox" for="login-password-info"
+            >Запомните меня
+          </label>
+          <a class="restore" href="#"> Я забыл пароль</a>
         </p>
         <p>
-          <button type="submit">Войти</button>
+          <button class="btn" type="submit">Войти</button>
         </p>
       </form>
       <button type="button">Закрыть</button>
     </section>
-    <section>
+    <section class="modal modal-map">
       <h2>Как до нас добраться</h2>
       <p>
         <img
@@ -232,7 +234,7 @@
           width="780"
           height="560"
           alt="офис компании по адресу
-         ул.итд и тп"
+       ул.итд и тп"
         />
       </p>
       <button type="button">Закрыть</button>
