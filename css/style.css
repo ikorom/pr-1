@@ -1,4 +1,4 @@
-body {
+body.main-page{
   margin: 0;
   padding: 0;
   font-family: "PT Sans Narrow", Arial, sans-serif;
@@ -12,6 +12,23 @@ body {
   background-image: url("../img/barbershop-index/background-index.jpg");
   background-position: top center;
   background-repeat: no-repeat;
+}
+
+body.other-page{
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+
+  background-color: hsl(0, 0%, 0%);
+  background-image: url("../img/barbershop-index/back-block-index.png");
+  background-position: top center;
+  background-repeat: repeat;
+
 }
 .visually-hidden {
   position: absolute;
@@ -68,6 +85,16 @@ a {
 .user-navigation a:hover,
 .user-navigation a:focus {
   background-color: #242424;
+}
+
+.wrap a,
+.wrap a {
+  color: #000000;
+}
+
+.wrap a:hover,
+.wrap a:focus {
+  text-decoration: underline;
 }
 
 .feature-list {
@@ -166,7 +193,7 @@ a {
   color: #000;
 
   background-color: #f8f3f0;
-  background-image: url(../img/barbershop-index/back-block-index.png);
+  background-image: url("../img/barbershop-index/back-block-index.png");
   background-position: 0 0;
   background-repeat: repeat;
 }
