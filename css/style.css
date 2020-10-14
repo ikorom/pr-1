@@ -1,4 +1,4 @@
-body.main-page{
+body.main-page {
   margin: 0;
   padding: 0;
   font-family: "PT Sans Narrow", Arial, sans-serif;
@@ -14,7 +14,7 @@ body.main-page{
   background-repeat: no-repeat;
 }
 
-body.other-page{
+body.other-page {
   margin: 0;
   padding: 0;
   font-family: "PT Sans Narrow", Arial, sans-serif;
@@ -28,7 +28,6 @@ body.other-page{
   background-image: url("../img/barbershop-index/back-block-index.png");
   background-position: top center;
   background-repeat: repeat;
-
 }
 .visually-hidden {
   position: absolute;
@@ -45,8 +44,6 @@ a {
   text-decoration: none;
 }
 
-
-
 .btn {
   font: inherit;
 
@@ -57,13 +54,9 @@ a {
 
   background-color: #000000;
   border: none;
-
-  
-  
-  
 }
 
-.price{
+.price {
   font: inherit;
 
   text-align: center;
@@ -73,11 +66,61 @@ a {
 
   background-color: #e5e5e5;
   border: none;
-
 }
 
+.custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
 
+.custom-checkbox + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.custom-checkbox + label::before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 2px solid #adb5bd;
+  /* border-radius: 0.25em; */
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  border-color: #000;
+}
+.custom-checkbox:checked + label::before {
+  border-color: #000;
+  /* background-color:#adb5bd; */
+  background-image: url("/img/barbershop-shop/cross.png");
+}
 
+/* стили при наведении курсора на checkbox */
+.custom-checkbox:not(:disabled):not(:checked) + label:hover::before {
+  border-color: #b3d7ff;
+}
+/* стили для активного состояния чекбокса (при нажатии на него) */
+.custom-checkbox:not(:disabled):active + label::before {
+  background-color: #f9f6f3;
+  border-color: #b3d7ff;
+}
+/* стили для чекбокса, находящегося в фокусе */
+.custom-checkbox:focus + label::before {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+.custom-checkbox:focus:not(:checked) + label::before {
+  border-color: #80bdff;
+}
+/* стили для чекбокса, находящегося в состоянии disabled */
+.custom-checkbox:disabled + label::before {
+  background-color: #e9ecef;
+}
 
 .btn:hover,
 .btn:focus,
@@ -106,8 +149,7 @@ a {
 .site-navigation a:focus,
 .user-navigation a:hover,
 .user-navigation a:focus {
-  background-color:#242424;
-  
+  background-color: #242424;
 }
 
 .wrap a,
@@ -121,7 +163,7 @@ a {
 }
 
 .item-equipment,
-.item-photo  {
+.item-photo {
   list-style: none;
 }
 
@@ -136,7 +178,6 @@ a {
 .feature-item h3 {
   font-size: 30px;
   line-height: 42px;
-  
 }
 
 .index-columns {
@@ -176,14 +217,12 @@ a {
   border-color: #663d15;
 }
 
-         
-
 /*SHOP*/
-.shop-galery-item{
+.shop-galery-item {
   list-style: none;
 }
 
-.btn-page-all{
+.btn-page-all {
   list-style: none;
 }
 
@@ -197,10 +236,6 @@ a {
 
   background-color: #000000;
   border: none;
-
-  
-  
-  
 }
 
 .btn-page:hover,
@@ -209,23 +244,6 @@ a {
   color: #000;
   background-color: white;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* FOOTER */
 
@@ -255,8 +273,6 @@ a {
 .footer-social ul {
   list-style: none;
 }
-
-
 
 .social-btn {
   color: #fff;
