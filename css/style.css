@@ -45,6 +45,8 @@ a {
   text-decoration: none;
 }
 
+
+
 .btn {
   font: inherit;
 
@@ -55,7 +57,27 @@ a {
 
   background-color: #000000;
   border: none;
+
+  
+  
+  
 }
+
+.price{
+  font: inherit;
+
+  text-align: center;
+  color: #000000;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #e5e5e5;
+  border: none;
+
+}
+
+
+
 
 .btn:hover,
 .btn:focus,
@@ -84,7 +106,8 @@ a {
 .site-navigation a:focus,
 .user-navigation a:hover,
 .user-navigation a:focus {
-  background-color: #242424;
+  background-color:#242424;
+  
 }
 
 .wrap a,
@@ -95,6 +118,11 @@ a {
 .wrap a:hover,
 .wrap a:focus {
   text-decoration: underline;
+}
+
+.item-equipment,
+.item-photo  {
+  list-style: none;
 }
 
 .feature-list {
@@ -108,6 +136,7 @@ a {
 .feature-item h3 {
   font-size: 30px;
   line-height: 42px;
+  
 }
 
 .index-columns {
@@ -147,6 +176,59 @@ a {
   border-color: #663d15;
 }
 
+         
+
+/*SHOP*/
+.shop-galery-item{
+  list-style: none;
+}
+
+.btn-page-all{
+  list-style: none;
+}
+
+.btn-page {
+  font: inherit;
+
+  text-align: center;
+  color: #fff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #000000;
+  border: none;
+
+  
+  
+  
+}
+
+.btn-page:hover,
+.btn-page:focus,
+.btn-page:active {
+  color: #000;
+  background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
 .footer {
   color: #fff;
 
@@ -173,6 +255,8 @@ a {
 .footer-social ul {
   list-style: none;
 }
+
+
 
 .social-btn {
   color: #fff;
