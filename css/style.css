@@ -245,6 +245,11 @@ a {
   background-color: white;
 }
 
+.chekbox-radio:hover,
+.chekbox-radio:focus,
+.chekbox-radio:active {
+  color: #663d15;
+}
 /* FOOTER */
 
 .footer {
