@@ -202,18 +202,19 @@ a {
   text-transform: none;
 }
 .gallery-slide {
+  margin: 0;
   background-color: #cccccc;
-  border: 7px solid #fff;
+    border: 7px solid #fff;
 }
 
-.appoinment-item input {
+.appointment-item input {
   font: inherit;
 
   background-color: transparent;
   border: 2px solid #000000;
 }
 
-.appoinment-item input:focus {
+.appointment-item input:focus {
   border-color: #663d15;
 }
 
@@ -335,4 +336,170 @@ a {
 .restore:hover,
 .restore:focus {
   text-decoration: none;
+}
+
+/* сеточные стили */
+
+html,
+body{
+  min-width: 1122px;
+  min-height: 1750px;
+}
+
+.container{
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main-header{
+  margin-bottom: 75px;
+
+  /* Временно для сетки */
+  min-height: 285px;
+}
+
+.main-navigation{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* time for shit */
+  min-height: 285px;
+  background-color: transparent;
+}
+
+.main-header-logo{
+order: 2;
+width: 368px;
+height: 153px;
+
+
+}
+
+.main-navigation-wrapper{
+  width: 100%;
+  margin-bottom: 60px;
+
+  background-color: #000;
+
+  /* time for shit */
+  min-height: 70px;
+  background-color: transparent;
+}
+
+.main-navigation-wrapper .container{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.site-navigation{
+display: flex;
+justify-content: space-between;
+width: 620px;
+margin: 0;
+padding: 0;
+
+list-style: none;
+
+min-height: 70px;
+}
+
+
+.user-navigation{
+  width: 140px;
+margin: 0;
+padding: 0;
+
+list-style: none;
+
+min-height: 70px;
+}
+
+.advantages{
+  margin-bottom: 80px;
+}
+
+.feature-list{
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  /*  */
+  min-height: 170px;
+}
+
+.feature-item{
+
+  width: 300px;
+  /* */
+  min-height: 170px;
+}
+
+.index-columns{
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 80px;
+  margin-bottom: 30px;
+
+  /*  */
+ 
+
+}
+
+.news{
+  width: 380px;
+  /*  */
+  min-height: 315px;
+}
+
+.gallery{
+  width: 300px;
+  /*  */
+  min-height: 315px;
+}
+
+
+
+.contacts{
+  width: 380px;
+
+}
+
+.appointment{
+width: 300px;
+}
+
+.footer {
+margin-top: 65px;
+padding: 60px 0;
+
+/*  */
+min-height: 180px;
+}
+
+.footer .container{
+  display: flex;
+  
+}
+
+.footer-contacts{
+  width: 320px;
+margin: 0;
+margin-right: 80px;
+}
+
+.footer-social{
+width: 145px;
+}
+
+.footer-copyright{
+width: 150px;
+margin: 0;
+margin-left: auto;
 }

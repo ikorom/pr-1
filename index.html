@@ -14,10 +14,10 @@
 
   <body class="main-page">
     <header class="main-header">
-      <div class="container">
+      
         <nav class="main-navigation">
-          <div class="index-logo">
-            <a>
+          
+            <a class="main-header-logo">
               <img
                 src="img/barbershop-index/logo-index.png"
                 width="368"
@@ -25,8 +25,9 @@
                 alt="Логотип барбершопа «Бородинский»"
               />
             </a>
-          </div>
-
+         
+            <div class="main-navigation-wrapper">
+              <div class="container">
           <ul class="site-navigation">
             <li>
               <a href="#">Информация</a>
@@ -52,8 +53,10 @@
               </div>
             </li>
           </ul>
+        </div>
+        </div>
         </nav>
-      </div>
+      
     </header>
     <main class="container">
       <h1 class="visually-hidden">Барбершоп «Бородинский»</h1>
@@ -92,11 +95,13 @@
           <h2>Новости</h2>
           <ul class="news-list">
             <li class="news-item">
-              <p>Новость 1</p>
+              <p> Наши мастера - профессионалы своего дела и не могут стоить дешево.
+                К тому же, разве цена не дает определенный статус?</p>
               <time class="news-date" datetime="2016-01-11">11 января</time>
             </li>
             <li class="news-item">
-              <p>Новость 2</p>
+              <p>Забудьте, как вы стриглись раньше. Мы сделаев из вас звезду
+                футбола и кино! Во всяком случае внешне.</p>
               <time class="news-date" datetime="2016-01-18">18 января</time>
             </li>
           </ul>
@@ -138,49 +143,49 @@
           <a class="btn" href="map.html">как проехать</a>
           <a class="btn" href="contacts.html">обратная связь</a>
         </section>
-        <section class="apppointment">
+        <section class="appointment">
           <h2>Записаться</h2>
-          <p class="appoinment-info">
-            Укажите желаемую дату и время и мы свяжемся с вами для подтверждения
+          <p class="appointment-info">
+            Укажите желаемую дату и время и мы свяжемся<br> с вами для подтверждения
             брони
           </p>
           <form
-            class="apppointment-form"
+            class="appointment-form"
             action="https://test.org"
             method="post"
           >
-            <p class="appoinment-item">
-              <label for="apppointment-date">Дата</label>
+            <p class="appointment-item">
+              <label for="appointment-date">Дата</label>
               <input
-                id="apppointment-date"
+                id="appointment-date"
                 type="date"
                 name="date"
                 value="2020-10-09"
               />
             </p>
-            <p class="appoinment-item">
-              <label for="apppointment-time">Время</label>>
+            <p class="appointment-item">
+              <label for="appointment-time">Время</label>
               <input
-                id="apppointment-time"
+                id="appointment-time"
                 type="time"
                 name="time"
                 value="10:00"
               />
             </p>
-            <p class="appoinment-item">
-              <label for="apppointment-name">Ваше имя</label>
+            <p class="appointment-item">
+              <label for="appointment-name">Ваше имя</label>
               <input
-                id="apppointment-name"
+                id="appointment-name"
                 type="text"
                 name="name"
                 value=""
                 placeholder="Имя"
               />
             </p>
-            <p class="appoinment-item">
-              <label for="apppointment-phone">Телефон</label>
+            <p class="appointment-item">
+              <label for="appointment-phone">Телефон</label>
               <input
-                id="apppointment-phone"
+                id="appointment-phone"
                 type="tel"
                 name="phone"
                 value=""
@@ -193,6 +198,7 @@
       </div>
     </main>
     <footer class="footer">
+      <div class="container">
       <div class="footer-contacts">
         <p>
           БАРБЕРШОП &laquo;БОРОДИНСКИЙ&raquo;<br />
@@ -213,6 +219,7 @@
         <p>Разработано</p>
         <a class="btn" href="https://yandex.ru">Яндекс</a>
       </div>
+    </div>
     </footer>
     <section class="modal modal-login">
       <h2>Личный кабинет</h2>
