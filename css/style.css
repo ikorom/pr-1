@@ -761,6 +761,11 @@ margin-right: 80px;
 .figure-item-photo ul{
  padding-left: 0px;
  margin-top: 0px;
+ 
+}
+.figure-item-photo li
+{
+  box-shadow: 0 0 10px rgba(122,122,122,0.5);
 }
 .available-article{
   display: flex;
@@ -772,8 +777,13 @@ margin-right: 80px;
   display: flex;
 }
 
-.item-content-text{
+.item-content-text p{
   width: 380px;
+  letter-spacing: -0.2px;
+}
+.main-photo li{
+  width: 460px;
+  height: 468px;
 }
 
 .price-item-price-and-btm {
@@ -802,3 +812,5 @@ margin-right: 80px;
   margin-bottom: 10px;
   
 }
+
+
