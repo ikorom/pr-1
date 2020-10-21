@@ -544,6 +544,10 @@ body {
   padding-bottom: 25px;
 }
 
+.user-block{
+  text-align: right;
+}
+
 .wrap ul {
   list-style: none;
   display: flex;
@@ -664,16 +668,76 @@ article {
   display: flex;
   align-items: center;
   text-align: center;
-  font-size: 32px;
+  font-size: 48px;
 }
 .separator::before, .separator::after {
   content: '';
   flex: 1;
-  border-bottom: 1px solid #000;
+  border-bottom: 3px solid #000;
 }
 .separator::before {
-  margin-right: .25em;
+  margin-right: 26px;
 }
 .separator::after {
-  margin-left: .25em;
+  margin-left: 26px;
+}
+
+.wrap{
+  margin-bottom: 60px;
+}
+
+.price-columns {
+  color: #000000;
+
+  background-color: #f8f5f2;
+  background-image: url("../img/barbershop-index/back-block-index.png");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.price-columns h2 {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.price-columns {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 38px;
+  padding-bottom: 50px;
+  margin-bottom: 30px;
+
+  /*  */
+}
+.price-content-down-left,
+.price-content-up-left{
+margin-right: 80px;
+}
+
+.price-content-title{
+  font-size: 24px;
+}
+
+.price-content-up-right{
+  width: 460px;
+}
+
+.price-table{
+  border-collapse: collapse;
+  border: 2px solid #000;
+}
+.price-table tr{
+  border: 2px solid #000;
+  height: 39px;
+}
+.price-table td{
+  width: 227px;
+  border: 2px solid #000;
+  padding-left: 17px;
+}
+.price-care{
+  padding-left: 0px;
+}
+.down-block .price-content-title{
+  margin-bottom: 0px;
 }
