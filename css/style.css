@@ -170,7 +170,8 @@ a {
 }
 
 .item-equipment,
-.item-photo {
+.item-photo,
+.main-photo {
   list-style: none;
 }
 
@@ -740,4 +741,64 @@ margin-right: 80px;
 }
 .down-block .price-content-title{
   margin-bottom: 0px;
+}
+
+/* item.html */
+
+
+.item-photo{
+  display: flex;
+  
+}
+.item-photo li{
+  margin-right: 20px;
+}
+.figure-item-photo{
+  margin-left: 0px;
+  margin-right: 90px;
+  margin-top: 0px;
+}
+.figure-item-photo ul{
+ padding-left: 0px;
+ margin-top: 0px;
+}
+.available-article{
+  display: flex;
+  justify-content: space-between;
+   
+}
+
+.block{
+  display: flex;
+}
+
+.item-content-text{
+  width: 380px;
+}
+
+.price-item-price-and-btm {
+  width: 187px;
+  height: 43px;
+  display: flex;
+
+  padding: 0px 0px;
+  text-align: center;
+  margin-bottom: 68px;
+}
+
+.discription{
+  margin-bottom: 45px;
+}
+
+.text-h3{
+  font-size: 24px;
+}
+.item-equipment{
+  padding-left: 0px;
+
+}
+.item-equipment p{
+  margin-top: 0px;
+  margin-bottom: 10px;
+  
 }
