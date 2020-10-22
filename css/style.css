@@ -29,19 +29,31 @@ body.other-page {
   background-position: top center;
   background-repeat: repeat;
 }
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
+
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
+
+  white-space: nowrap;
+  
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
 a {
   text-decoration: none;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
 }
 
 .btn {
@@ -147,6 +159,8 @@ a {
 .site-navigation a,
 .user-navigation a,
 .other-site-navigation a {
+  display: block;
+  padding: 25px 20px;
   color: #fff;
 }
 
@@ -181,20 +195,54 @@ a {
 
 .feature-item {
   text-align: center;
+
+  background: rgba(255,45,82,0.2);
+  box-shadow: rgba(122,122,88,0.5);
 }
 
 .feature-item h3 {
+position: relative;
+
+  margin: 0;
+  margin-bottom: 60px;
   font-size: 30px;
   line-height: 42px;
+
+  background-color:rgba(122,122,122,0.5);
+}
+
+.feature-item h3::after{
+  content: "";
+
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  margin-left: -10px;
+
+  width: 20px;
+  height: 20px;
+
+  background-color: seashell;
+
+  transform: rotate(45deg);
+}
+
+.feature-item p{
+  margin: 0 10px;
 }
 
 .index-columns {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 80px;
+  margin-bottom: 35px;
   color: #000000;
 
   background-color: #f8f5f2;
-  background-image: url("../img/barbershop-index/back-block-index.png");
-  background-position: 0 0;
-  background-repeat: repeat;
+  background-image: url("../img/barbershop-index/block-shadow-hr.png") ,
+   url("../img/barbershop-index/back-block-index.png");
+  background-position: center, 0 0;
+  background-repeat: no-repeat ,repeat;
 }
 
 .index-columns h2 {
@@ -398,7 +446,8 @@ body {
 
 .site-navigation {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
   width: 620px;
   margin: 0;
   padding: 0;
@@ -409,13 +458,45 @@ body {
 }
 
 .user-navigation {
-  width: 140px;
+  display: flex;
+
+  max-width: 140px;
   margin: 0;
   padding: 0;
 
   list-style: none;
 
   min-height: 70px;
+}
+
+.user-navigation .login{
+  position: relative;
+  padding-left: 50px;
+}
+
+.login::before{
+  content: "";
+
+  position: absolute;
+  top: 27px;
+  left: 24px;
+
+  width: 16px;
+  height: 18px;
+
+  background-image: url("/svg/login.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  opacity: 0.3; /* полупрозрачность */
+  
+  
+}
+
+.login:hover::before,
+.login:focus::before,
+.login:active::before{
+  opacity: 1;
 }
 
 .advantages {
@@ -436,8 +517,10 @@ body {
 
 .feature-item {
   width: 300px;
-  /* */
+  
   min-height: 170px;
+
+
 }
 
 .index-columns {
@@ -545,9 +628,7 @@ body {
   padding-bottom: 25px;
 }
 
-.user-block{
-  text-align: right;
-}
+
 
 .wrap ul {
   list-style: none;
