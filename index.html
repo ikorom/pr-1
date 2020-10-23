@@ -95,13 +95,12 @@
           <h2>Новости</h2>
           <ul class="news-list">
             <li class="news-item">
-              <p> Наши мастера - профессионалы своего дела и не могут стоить дешево.
-                К тому же, разве цена не дает определенный статус?</p>
+              <p> НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ
+              </p>
               <time class="news-date" datetime="2016-01-11">11 января</time>
             </li>
             <li class="news-item">
-              <p>Забудьте, как вы стриглись раньше. Мы сделаев из вас звезду
-                футбола и кино! Во всяком случае внешне.</p>
+              <p>В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ</p>
               <time class="news-date" datetime="2016-01-18">18 января</time>
             </li>
           </ul>
@@ -109,7 +108,8 @@
         </section>
         <section class="gallery">
           <h2 class="index-content-title">Фотогалерея</h2>
-          <div class="gallery">
+
+          <div class="gallery-container">
             <figure class="gallery-slide">
               <a href="#">
                 <img
@@ -119,11 +119,11 @@
                 />
               </a>
             </figure>
-            <div class="button">
-            <button class="btn gallery-prev">Назад</button>
-            <button class="btn gallery-next">Вперёд</button>
+           
+            <button class="btn gallery-button gallery-prev" type="button" disabled>Назад</button>
+            <button class="btn gallery-button gallery-next">Вперёд</button>
             </div>
-          </div>
+          
         </section>
       </div>
       <div class="index-columns">
@@ -157,7 +157,7 @@
               <label for="appointment-date">Дата</label>
               <input
                 id="appointment-date"
-                type="date"
+                type="text"
                 name="date"
                 value="2020-10-09"
               />
@@ -166,7 +166,7 @@
               <label for="appointment-time">Время</label>
               <input
                 id="appointment-time"
-                type="time"
+                type="text"
                 name="time"
                 value="10:00"
               />
@@ -209,9 +209,9 @@
       <div class="footer-social">
         <p>Давайте дружить!</p>
         <ul>
-          <li><a class="social-btn" href="#">Вконтакте</a></li>
-          <li><a class="social-btn" href="#">Фейсбук</a></li>
-          <li><a class="social-btn" href="#">Инстаграм</a></li>
+          <li><a class="social-btn" href="#"><span class="visually-hidden"> Вконтакте</span></span></a></li>
+          <li><a class="social-btn" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+          <li><a class="social-btn" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
         </ul>
       </div>
       <div class="footer-copyright">

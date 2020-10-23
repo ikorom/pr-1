@@ -57,6 +57,11 @@ img{
 }
 
 .btn {
+display: inline-block;
+margin-right: 16px;
+padding: 10px 30px;
+
+
   font: inherit;
 
   text-align: center;
@@ -66,6 +71,13 @@ img{
 
   background-color: #000000;
   border: none;
+}
+
+.btn.disabled,
+.btn:disabled{
+  cursor: default;
+  opacity: 0.5;
+  background-color: #000000;
 }
 
 .price {
@@ -196,8 +208,7 @@ img{
 .feature-item {
   text-align: center;
 
-  background: rgba(255,45,82,0.2);
-  box-shadow: rgba(122,122,88,0.5);
+  
 }
 
 .feature-item h3 {
@@ -208,7 +219,7 @@ position: relative;
   font-size: 30px;
   line-height: 42px;
 
-  background-color:rgba(122,122,122,0.5);
+  
 }
 
 .feature-item h3::after{
@@ -246,33 +257,80 @@ position: relative;
 }
 
 .index-columns h2 {
+  margin: 0;
+  margin-bottom: 25px;
+
   font-size: 30px;
   line-height: 42px;
+
+  
 }
 
+.news{
+  height: 316px;
+}
+
+
 .news-list {
+margin: 0;
+margin-bottom: 25px;
+padding: 0px;
+
   list-style: none;
+}
+
+.news-item{
+  margin-bottom: 25px;
+}
+
+.news-item p{
+  margin: 0;
 }
 
 .news-item time {
   text-transform: none;
 }
+
+.gallery{
+  height: 316px;
+}
+
+
+
+
+
+.gallery-container{
+  position: relative;
+  height: 260px;
+  
+}
+
 .gallery-slide {
   margin: 0;
   background-color: #cccccc;
   border: 7px solid #fff;
 }
 
-.appointment-item input {
-  font: inherit;
 
-  background-color: transparent;
-  border: 2px solid #000000;
+
+.gallery-button{
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+
+  width: 140px;
+  margin: 0;
 }
 
-.appointment-item input:focus {
-  border-color: #663d15;
+.gallery-prev{
+  left: 0;
 }
+
+.gallery-next{
+  right: 0;
+}
+
+
 
 /*SHOP*/
 .shop-galery-item {
@@ -548,9 +606,71 @@ body {
   width: 380px;
 }
 
+.contacts p{
+  margin: 0;
+  margin-bottom: 25px;
+}
+
 .appointment {
   width: 300px;
 }
+
+.appointment-info{
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.appointment-form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+ 
+}
+
+.appointment-item{
+  width: 140px;
+  margin: 0;
+  margin-bottom: 10px;
+  background-color: #cccccc;
+  
+}
+
+.appointment-item input {
+ box-sizing: border-box;
+ width: 140px;
+ padding-top: 8px;
+ padding-left: 15px;
+ padding-right: 15px;
+ padding-bottom: 7px;
+ 
+ 
+  font: inherit;
+  
+
+  background-color: transparent;
+  border: 2px solid #000000;
+}
+
+.appointment-item input:focus {
+  border-color: #663d15;
+}
+
+.appointment .btn{
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  margin-right: 0;
+  
+}
+
+.appointment-item label{
+  display: block;
+  margin-bottom: 9px;
+  margin-left: 15px;
+}
+
+
 
 .footer {
   margin-top: 65px;
