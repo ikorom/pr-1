@@ -736,7 +736,7 @@ body {
   background-color: #000;
 }
 .other-container li {
-  padding-top: 25px;
+  white-space: nowrap;
 }
 .other-header-logo {
   padding-top: 24px;
