@@ -1195,9 +1195,9 @@ content: "";
 
 .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before{
 
-  transform: rotate(45deg);
+  transform: rotate(-45deg);
 }
 
 .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after{
-  transform: rotate(-45deg);
+  transform: rotate(45deg);
 }
