@@ -81,21 +81,18 @@
                 </h3>
                 <ul class="price-care">
                   <li type="none">
-                    <p>
-                      <span>&diams;&nbsp;&nbsp;&nbsp;&nbsp;</span>BAXTER OF
+                    
+                      BAXTER OF
                       CALIFORNIA
-                    </p>
                   </li>
                   <li type="none">
-                    <p><span>&diams;&nbsp;&nbsp;&nbsp;&nbsp;</span>MR NATTY</p>
+                    MR NATTY
                   </li>
                   <li type="none">
-                    <p><span>&diams;&nbsp;&nbsp;&nbsp;&nbsp;</span>SUAVECITO</p>
+                    SUAVECITO
                   </li>
                   <li type="none">
-                    <p>
-                      <span>&diams;&nbsp;&nbsp;&nbsp;&nbsp;</span>MALIN-GOETZ
-                    </p>
+                     MALIN-GOETZ
                   </li>
                 </ul>
               </div>
@@ -183,13 +180,14 @@
     </div>
     </footer>
     <section class="modal modal-login">
+      <button class="modal-close" type="button"></button>
       <h2>Личный кабинет</h2>
-      <p>Введите свой логин и пароль.</p>
+      <p class="modal-description">Введите пожалуйста свой логин и пароль</p>
       <!--Здесь будет форма-->
       <form class="login-form" action="https://test.org" method="post">
         <p>
           <label class="visually-hidden" for="user-login">Логин</label>
-          <input
+          <input class="login-icon-user"
             id="user-login"
             type="email"
             name="login"
@@ -198,28 +196,27 @@
         </p>
         <p>
           <label class="visually-hidden" for="user-password">Пароль</label>
-          <input
+          <input class="login-icon-password"
             id="user-password"
             type="password"
             name="password"
             placeholder="*******"
           />
         </p>
-        <p>
-          <input id="login-password-info" type="checkbox" name="remember" />
-          <label class="login-checkbox" for="login-password-info"
-            >Запомните меня
-          </label>
-          <a class="restore" href="#"> Я забыл пароль</a>
+        <p class="login-help">
+          <label class="login-checkbox" for="login-password-info">
+          <input  id="login-password-info" type="checkbox" name="remember" class="visually-hidden" >
+          <span class="checkbox-indicator"></span> Запомните меня</label>
+           <a class="restore" href="#"> Я забыл пароль</a>
         </p>
         <p>
           <button class="btn" type="submit">Войти</button>
         </p>
       </form>
-      <button type="button">Закрыть</button>
+
     </section>
     <section class="modal modal-map">
-      <h2>Как до нас добраться</h2>
+      <h2 class="visually-hidden" >Как до нас добраться</h2>
       <p>
         <img
           src="img/barbershop-index/map.png"
@@ -229,7 +226,7 @@
        ул.итд и тп"
         />
       </p>
-      <button type="button">Закрыть</button>
+      <button class="modal-close"  type="button"><span class="visually-hidden"> Закрыть</span></button>
     </section>
   </body>
 </html>

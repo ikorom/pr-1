@@ -928,6 +928,9 @@ article {
 
   /*  */
 }
+
+
+
 .price-content-down-left,
 .price-content-up-left{
 margin-right: 80px;
@@ -957,6 +960,28 @@ margin-right: 80px;
 .price-care{
   padding-left: 0px;
 }
+
+.price-care li{
+  position: relative;
+
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+
+.price-care li::before{
+  content: "";
+
+  position: absolute;
+  top: 8px;
+  left: 0;
+
+  width: 8px;
+  height: 8px;
+
+  background-color: #000000;
+  transform: rotate(45deg);
+}
+
 .down-block .price-content-title{
   margin-bottom: 0px;
 }
