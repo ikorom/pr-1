@@ -141,7 +141,7 @@
             ПН - ПТ:С 10:00 ДО 22:00<br />
             СБ - ВС:С 10:00 ДО 19:00
           </p>
-          <a class="btn" href="map.html">как проехать</a>
+          <a class="btn btn-map" href="map.html">как проехать</a>
           <a class="btn" href="contacts.html">обратная связь</a>
         </section>
         <section class="appointment">
@@ -328,12 +328,40 @@
 
     <script>
       var link = document.querySelector(".login");
-      var popup = document.querySelector(".modal-login");
+      var popupLogin = document.querySelector(".modal-login");
+     
+      var map = document.querySelector(".btn-map");
+      var popupMap=document.querySelector(".modal-map");
+      
+      var close = document.querySelector(".modal-close");
 
       link.addEventListener("click", function (evt) {
         evt.preventDefault();
-        popup.classList.add("modal-show");
+        popupLogin.classList.add("modal-show");
       });
+
+      map.addEventListener("click", function(evt){
+        evt.preventDefault();
+        popupMap.classList.add("modal-show");
+      });
+
+       close.addEventListener("click", function(evt){
+        evt.preventDefault();
+        
+        popupMap.classList.toggle("modal-show");
+        popupLogin.classList.toggle("modal-show");
+        
+      });
+
+      //   close.addEventListener("click", function(evt){
+      //   evt.preventDefault();
+      //   popupMap.classList.remove("modal-show");
+               
+      // });
+
+     
+      
+
     </script>
   </body>
 </html>

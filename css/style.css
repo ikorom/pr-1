@@ -1085,9 +1085,9 @@ position: fixed;
   padding: 50px 80px;
 }
 
-.modal-show{
+/* .modal-show{
   display: block;
-}
+} */
 
 .modal-close{
   position: absolute;
@@ -1245,6 +1245,7 @@ content: "";
     left: 50%;
 
     display: none;
+
     width: 766px;
     height: 561px;
     margin-top: -280px;
@@ -1255,4 +1256,8 @@ content: "";
 
   .modal-map p{
     margin: 0;
+  }
+
+  .modal-show{
+    display: block;
   }
