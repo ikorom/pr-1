@@ -281,6 +281,7 @@
             type="email"
             name="login"
             placeholder="email@example.com"
+            required
           />
         </p>
         <p>
@@ -291,6 +292,7 @@
             type="password"
             name="password"
             placeholder="*******"
+            required
           />
         </p>
         <p class="login-help">
@@ -328,36 +330,73 @@
 
     <script>
       var link = document.querySelector(".login");
-      var popupLogin = document.querySelector(".modal-login");
+      var popup = document.querySelector(".modal-login");
      
       var map = document.querySelector(".btn-map");
-      var popupMap=document.querySelector(".modal-map");
+     
       
       var close = document.querySelector(".modal-close");
+      
+      var login = popup.querySelector("[name=login]");
+      var form = popup.querySelector("form");
+      var password = popup.querySelector("[name=password]");
+      var storage = "";
+      var isStorageSupport = true;
+
+      try{
+        storage = localStorage.getItem("login");
+      } catch (err){
+        isStorageSupport = false;
+      }
 
       link.addEventListener("click", function (evt) {
         evt.preventDefault();
-        popupLogin.classList.add("modal-show");
-      });
+        popup.classList.add("modal-show");
+        if(storage){
+        password.focus();
+        login.value = storage;}
+        else {
+          login.focus();
+        }
 
-      map.addEventListener("click", function(evt){
-        evt.preventDefault();
-        popupMap.classList.add("modal-show");
       });
-
-       close.addEventListener("click", function(evt){
-        evt.preventDefault();
+      
         
-        popupMap.classList.toggle("modal-show");
-        popupLogin.classList.toggle("modal-show");
+      close.addEventListener("click", function(evt){
+        evt.preventDefault();
+        popup.classList.remove("modal-show");
         
       });
+      
+      form.addEventListener("submit", function(evt){
+        
+        if(!login.value || !password.value){
+          evt.preventDefault();
+        console.log("Нужно ввести логин и пароль");
+        console.log(login.value);
+        console.log(password.value);
+        }
+        else{ 
+          if(isStorageSupport){
+          localStorage.setItem("login", login.value);
+          }
 
-      //   close.addEventListener("click", function(evt){
-      //   evt.preventDefault();
-      //   popupMap.classList.remove("modal-show");
-               
-      // });
+        }
+      });
+
+      window.addEventListener("keydown", function(evt){
+        if (evt.keyCode===27){
+          if(popup.classList.contains("modal-show")){
+            event.preventDefault();
+            popup.classList.remove("modal-show");
+
+          }
+
+        }
+      });
+
+
+
 
      
       
