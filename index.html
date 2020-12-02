@@ -272,7 +272,7 @@
       <h2>Личный кабинет</h2>
       <p class="modal-description">Введите пожалуйста свой логин и пароль</p>
       <!--Здесь будет форма-->
-      <form class="login-form" action="https://test.org" method="post">
+      <form class="login-form " action="https://test.org" method="post">
         <p>
           <label class="visually-hidden" for="user-login">Логин</label>
           <input
@@ -336,9 +336,9 @@
      
       
       var close = document.querySelector(".modal-close");
-      
-      var login = popup.querySelector("[name=login]");
       var form = popup.querySelector("form");
+      var login = popup.querySelector("[name=login]");
+      
       var password = popup.querySelector("[name=password]");
       var storage = "";
       var isStorageSupport = true;
@@ -352,9 +352,12 @@
       link.addEventListener("click", function (evt) {
         evt.preventDefault();
         popup.classList.add("modal-show");
+        
         if(storage){
+        
+        login.value = storage;
         password.focus();
-        login.value = storage;}
+        }
         else {
           login.focus();
         }
@@ -365,18 +368,23 @@
       close.addEventListener("click", function(evt){
         evt.preventDefault();
         popup.classList.remove("modal-show");
+        popup.classList.remove("modal-error");
         
       });
       
       form.addEventListener("submit", function(evt){
+        
+        
         console.log("Нужно ввести логин и пароль");
         if(!login.value || !password.value){
           evt.preventDefault();
+          popup.classList.add("modal-error");
         console.log("Нужно ввести логин и пароль");
         console.log(login.value);
         console.log(password.value);
         }
         else{ 
+          console.log("Нужно ввести логин и пароль");
           if(isStorageSupport){
           localStorage.setItem("login", login.value);
           }
@@ -386,14 +394,16 @@
 
       window.addEventListener("keydown", function(evt){
         if (evt.keyCode===27){
+          event.preventDefault();
           if(popup.classList.contains("modal-show")){
-            event.preventDefault();
+            
             popup.classList.remove("modal-show");
 
           }
 
         }
       });
+
 
 
 
