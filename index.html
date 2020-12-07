@@ -268,21 +268,21 @@
       </div>
     </footer>
     <section class="modal modal-login">
-      <button class="modal-close" type="button"></button>
+      
       <h2>Личный кабинет</h2>
       <p class="modal-description">Введите пожалуйста свой логин и пароль</p>
       <!--Здесь будет форма-->
-      <form class="login-form " action="https://test.org" method="post">
+      <form class="login-form " action="https://echo.htmlacademy.ru/" method="post">
         <p>
           <label class="visually-hidden" for="user-login">Логин</label>
           <input
             class="login-icon-user"
             id="user-login"
-            type="email"
+            type="text"
             name="login"
             placeholder="email@example.com"
             required
-          />
+          >
         </p>
         <p>
           <label class="visually-hidden" for="user-password">Пароль</label>
@@ -293,7 +293,7 @@
             name="password"
             placeholder="*******"
             required
-          />
+          >
         </p>
         <p class="login-help">
           <label class="login-checkbox" for="login-password-info">
@@ -308,10 +308,13 @@
           <a class="restore" href="#"> Я забыл пароль</a>
         </p>
         <p>
-          <button class="btn" type="submit">Войти</button>
+        <button class="btn" type="submit" >Войти</button>
         </p>
       </form>
+      <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
+
+
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <p>
@@ -337,11 +340,11 @@
       
       var close = document.querySelector(".modal-close");
       var form = popup.querySelector("form");
-      var login = popup.querySelector("[name=login]");
-      
+      var login = popup.querySelector("[name=login]");      
       var password = popup.querySelector("[name=password]");
-      var storage = "";
+      
       var isStorageSupport = true;
+      var storage = "";
 
       try{
         storage = localStorage.getItem("login");
@@ -373,21 +376,37 @@
         
       });
       
-      form.addEventListener("submit", function(evt){
-        evt.preventDefault();
-        popup.classList.add("modal-error");
-        console.log("Нужно ввести логин и пароль");
-        if(!login.value || !password.value){
+      form.addEventListener
+      (
+        'submit', function(evt)
+      {
+        
+        
+        console.log("Нужно ввести логин и пароль0");
+        if (!login.value || !password.value){
           evt.preventDefault();
+          popup.classList.remove("modal-error");
+          
+          popup.offsetWidth = popup.offsetWidth;
+
           popup.classList.add("modal-error");
-        console.log("Нужно ввести логин и пароль");
-        console.log(login.value);
-        console.log(password.value);
+
+
+        console.log("Нужно ввести логин и пароль1");
+        
         }
-        else{ 
-          console.log("Нужно ввести логин и пароль");
-          if(isStorageSupport){
+        else
+        { 
+          
+          if(isStorageSupport)
+          {
+
           localStorage.setItem("login", login.value);
+          console.log("Нужно ввести логин и пароль2");
+          
+          }
+          else{
+            console.log("Нужно ввести логин и пароль3");
           }
 
         }
@@ -395,10 +414,11 @@
 
       window.addEventListener("keydown", function(evt){
         if (evt.keyCode===27){
-          event.preventDefault();
+         
           if(popup.classList.contains("modal-show")){
-            
+             event.preventDefault();
             popup.classList.remove("modal-show");
+            popup.classList.remove("modal-error");
 
           }
 

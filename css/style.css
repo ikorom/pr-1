@@ -1077,7 +1077,7 @@ margin-right: 80px;
 @keyframes shake{
   0%,
   100% {
-    transform: translateX(-2000px);
+    transform: translateX(0px);
   }
   10%,
   30%,
@@ -1088,7 +1088,9 @@ margin-right: 80px;
   }
   20%,
   40%,
-  60%{
+  60%,
+  80%
+  {
     transform: translateX(10px);
   }
   
@@ -1177,7 +1179,7 @@ margin-bottom: 20px;
 }
 
 
-.login-form input[type="email"],
+.login-form input[type="text"],
 .login-form input[type="password"] {
   box-sizing: border-box;
   width: 100%;
@@ -1296,7 +1298,7 @@ content: "";
   .modal-show{
     display: block;
     animation-name: bounce;
-    animation-duration: 1.6s;
+    animation-duration: 0.6s;
 
   }
   .modal-error{
